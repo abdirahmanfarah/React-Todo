@@ -1,14 +1,15 @@
 import React from 'react';
 
-const Task = props => {
+const Item = props => {
   return (
-    <div
-    className={`task${props.task.completed ?  ' completed' : ''}`}
-    onClick ={() => props.toggleTask(props.task.id)}
+    <div className="task-list"
+    className={`item${props.item.completed ?  ' completed' : ''}`}
+    onClick ={() => props.toggleItem(props.item.id)}
     >
-      <p>{props.task.name}</p>
+    <p>{props.item.name}</p>
+
     </div>
   )
 }
 
-export default Task;
+export default Item;
