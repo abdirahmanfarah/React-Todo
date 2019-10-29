@@ -1,6 +1,7 @@
 import React from 'react';
 import TodoForm from './components/TodoComponents/TodoForm';
 import TodoList from './components/TodoComponents/TodoList';
+import './styles/Todo.css'
 
 const data = [
   {
@@ -39,6 +40,7 @@ class App extends React.Component {
     })
   }
   render() {
+    console.log('rendering....')
     return (
       <div>
         <div className='header'>

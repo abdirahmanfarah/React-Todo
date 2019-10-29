@@ -11,7 +11,7 @@ class TodoForm extends React.Component {
 
   handleChanges = e => {
     this.setState({
-      newTask: e.target.value
+      newItem: e.target.value
     });
   };
 
@@ -19,8 +19,8 @@ class TodoForm extends React.Component {
     e.preventDefault();
     console.log("it's clicking!");
 
-    this.props.addItem(this.state.newTask);
-    this.setState({ newTask: '' });
+    this.props.addItem(this.state.newItem);
+    this.setState({ newItem: '' });
   }
   render() {
     return (
